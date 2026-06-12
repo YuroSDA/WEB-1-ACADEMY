@@ -40,6 +40,7 @@ button {
     margin-left: 10px;
     border-radius: 5px;
     width: 270px;
+    display: none;
 }
 
 /* estilo para as listas da página "sobre" */

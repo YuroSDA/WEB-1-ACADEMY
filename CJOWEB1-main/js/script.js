@@ -1,5 +1,5 @@
 // função para mostrar dica aleatória
-function saudarUsuario() {
+function mostrarDica() {
     const dicas = [
         "Beba pelo menos 3 litros de água hoje!",
         "Mantenha a postura correta nos exercícios!",
@@ -9,4 +9,10 @@ function saudarUsuario() {
 
     const indice = Math.floor(Math.random() * dicas.length);
     document.getElementById("dica").value = dicas[indice];
+    const inputDica = document.getElementById("dica");
+    inputDica.style.display = "block";
 }
+
+
+// Adiciona um evento de clique ao botão para mostrar a dica
+document.getElementById("mostrarDica").addEventListener("click", mostrarDica);
