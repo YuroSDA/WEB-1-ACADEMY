@@ -1,10 +1,27 @@
 /* Requisito F: Propriedade de cores e fontes */
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #1a1a1a; /* fundo escuro (tema academia) */
-    color: #ffffff; /* texto branco*/
+   background-image: url(../Imagens%20Site/WhatsApp\ Image\ 2026-06-16\ at\ 10.37.56.jpeg);
+    background-size: 1920px 1080px;
+    background-attachment: fixed;
+    height: 100vh;
     margin: 0;
-    padding: 0;
+    position: relative;
+}
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Preto com 50% de opacidade */
+    z-index: 1; /* Fica acima da imagem */
+}
+header {
+    size: 100%;
+    position: relative;
+    z-index: 2; /* Fica acima do pseudo-elemento ::before */
 }
 
 nav ul {
