@@ -12,7 +12,3 @@ function mostrarDica() {
     const inputDica = document.getElementById("dica");
     inputDica.style.display = "block";
 }
-
-
-// Adiciona um evento de clique ao botão para mostrar a dica
-document.getElementById("mostrarDica").addEventListener("click", mostrarDica);
