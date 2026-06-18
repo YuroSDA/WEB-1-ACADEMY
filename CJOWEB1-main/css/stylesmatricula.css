@@ -10,11 +10,22 @@ z-index: 2;
 } 
 
 body {
-    background-image: url(Imagens%20Site/pexels-foadshariyati-29224211.jpg);
+    background-image: url(YuroSDA/WEB-1-ACADEMY/CJOWEB1-main/Imagens%20Site/WhatsApp%20Image%202026-06-16%20at%2010.37.56.jpeg);
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    z-index: 1;
+    z-index: -1;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Preto com 50% de opacidade */
+    z-index: 0; /* Fica acima da imagem */
 }
 
 h1 { 
@@ -22,7 +33,7 @@ font-size: 38px;
 text-align: center; 
 } 
 
-#formmatricula { 
+#formmatricula{ 
 display: block; 
 text-align: center; 
 background-color: rgba(255, 204, 0, 1); 
