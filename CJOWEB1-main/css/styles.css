@@ -47,3 +47,10 @@ nav ul li a {
     display: inline-block;
     padding: 5px 10px;
 }
+footer {
+    text-align: center;
+    color: black;
+    background-color: rgba(153, 123, 1, 0.5);
+    padding: 15;
+    margin-bottom: 1px;
+}

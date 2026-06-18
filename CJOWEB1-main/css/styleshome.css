@@ -49,6 +49,12 @@ button {
     font-weight: bold;
     border-radius: 5px
 }
+button:hover {
+    text-decoration: none;
+    box-shadow: 0 8px 20px rgba(153, 123, 1, 0.5);
+    transition: transform 0.3s ease;
+    transform: scale(1.05);
+}
 #dica[type="text"] {
     background-color: #333;
     color: #fff;
@@ -58,4 +64,11 @@ button {
     border-radius: 5px;
     width: 270px;
     display: none;
+}
+footer {
+    text-align: center;
+    color: black;
+    background-color: rgba(153, 123, 1, 0.5);
+    padding: 15;
+    margin-bottom: 1px;
 }

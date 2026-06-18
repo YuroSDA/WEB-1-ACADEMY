@@ -1,27 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matricula</title>
+    <link rel="stylesheet" href="css/stylesmat.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/sylesmatricula.css">
 </head>
- 
+<!--PAGINA MATRICULA-->
+
 <body>
-   <header>
+
+    <header>
         <h1>Academia PowerLifiting</h1>
         <nav>
             <ul>
-                <li><a href="Home.HTML">Home</a></li>
-                <li><a href="Sobre.HTML">Sobre</a></li>
-                <li><a href="Planos.HTML">Planos</a></li>
-                <li><a href="Treinos.HTML">Treinos</a></li>
-                <li><a href="Unidades.HTML">Unidades</a></li>
-                <li><a href="Matricula.HTML">Matricula</a></li>
-                <li><a href="Contato.HTML">Contato</a></li>
+                <li><a href="Pagina1.HTML">Home</a></li>
+                <li><a href="Pagina2.HTML">Sobre</a></li>
+                <li><a href="Pagina3.HTML">Planos</a></li>
+                <li><a href="Pagina4.HTML">Treinos</a></li>
+                <li><a href="Pagina5.HTML">Unidades</a></li>
+                <li><a href="Pagina6.HTML">Matricula</a></li>
+                <li><a href="Pagina7.HTML">Contato</a></li>
             </ul>
         </nav>
     </header>
+
+    <h1 id="h1matricula">Matricule-se Já!</h1>
+    <br><br>
+    <hr>
+
+    <form action="" id="formmatricula">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+
+            <label for="nome">Nome Completo:</label><br>
+            <input type="text" placeholder="Ex: <nome> <sobrenome>" id="nome" name="nome" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" placeholder="Ex: maromba@gmail.com" id="email" name="email" required><br><br>
+
+            <label for="cpf">CPF:</label><br>
+            <input type="number" placeholder="Ex: 123.456.789-00" id="cpf" name="cpf" required><br><br>
+
+            <label for="telefone">Telefone:</label><br>
+            <input type="tel" placeholder="Ex: (xx) xxxx-xxxx" id="telefone" name="telefone" required><br><br>
+
+            <label for="dataNascimento" placeholder="Ex: DD/MM/AAAA">Data de Nascimento:</label><br>
+            <input type="date" id="dataNascimento" name="dataNascimento" required><br><br>
+
+            <label for="observacaoMed">Observações Médicas:</label><br>
+            <textarea id="observacaoMed" name="observacaoMed"
+                placeholder="Ex: Alergias, condições médicas especiais, etc." rows="4" cols="20"></textarea><br><br>
+
+
+            <hr>
+
+
+            <legend>Plano de Matrícula</legend>
+            <br><br>
+
+            <label for="plano">Selecione o Plano:</label><br>
+            <select id="plano" name="plano" required>
+                <fieldset>
+                    <legend>Plano</legend>
+                    <option value=" ">--Selecione--</option>
+                    <option value="mensal">Mensal Black</option>
+                    <option value="semestral">Mensal Premium</option>
+                    <option value="anual">Anual Black</option>
+                    <option value="anual">Anual Premium</option>
+                </fieldset>
+            </select><br><br>
+
+            <label for="pagamento">Forma de Pagamento:</label><br>
+            <select id="pagamento" name="pagamento" required>
+                <fieldset>
+                    <legend>Pagamento</legend>
+                    <option value=" ">--Selecione--</option>
+                    <option value="cartao">Cartão de Crédito</option>
+                    <option value="boleto">Boleto Bancário</option>
+                    <option value="pix">PIX</option>
+                </fieldset>
+                 <br><br>
+            </select><br><br>
+                 
+                <label for="range">Nível do treino:</label>
+                <input type="range" id="range" min="1" max="10" value="5" step="1">
+
+                <p id="nivel"></p>
+                
+                <script src="script.js"></script>
+
+                <br><br>
+
+
+                <button type="submit">Enviar Matricula</button>
+    </form>
+
 </body>
+<footer>
+    <p> &copy; 2026 Academia PowerLifiting - Trabalho HTML 2º Semestre</p>
+</footer>
+
 </html>
