@@ -10,11 +10,11 @@ z-index: 2;
 } 
 
 body {
-    background-image: url(YuroSDA/WEB-1-ACADEMY/CJOWEB1-main/Imagens%20Site/WhatsApp%20Image%202026-06-16%20at%2010.37.56.jpeg);
+    background-image: url("https://raw.githubusercontent.com/YuroSDA/WEB-1-ACADEMY/main/CJOWEB1-main/Imagens%20Site/pexels-jonathanborba-27810162.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    z-index: -1;
+    z-index: -2;
 }
 
 body::before {
