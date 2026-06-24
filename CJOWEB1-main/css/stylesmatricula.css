@@ -82,6 +82,12 @@ font-family: impact, sans-serif;
 font-weight: bold; 
 font-size: 22px; 
 }
-form {
-    text-align: left;
+
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 80px;
 }
+
+

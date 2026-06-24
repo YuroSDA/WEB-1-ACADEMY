@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
 <!--PAGINA MATRICULA-->
 
@@ -29,7 +32,7 @@
         </nav>
     </header>
 
-    <h1>Matricule-se Já!</h1>
+    <h1 class="bebas-neue-regular">Matricule-se Agora!</h1>
     <br><br>
     <hr>
 
@@ -61,7 +64,7 @@
 
 
             <legend>Plano de Matrícula</legend>
-            <br><br>
+            <br>
 
             <select id="plano" name="plano" required>
 
@@ -74,10 +77,10 @@
 
             </select><br><br>
 
-            <label for="pagamento"><i class="fas fa-credit-card"></i> Forma de Pagamento:</label><br>
+            <label for="pagamento"><i class="fas fa-credit-card"></i> Forma de Pagamento:</label><br><br>
             <select id="pagamento" name="pagamento" required>
                 <fieldset>
-                    <legend>Pagamento</legend>
+                    <legend>Pagamento</legend><br>
                     <option value=" ">--Selecione--</option>
                     <option value="cartao">Cartão de Crédito</option>
                     <option value="boleto">Boleto Bancário</option>
@@ -85,18 +88,10 @@
                 </fieldset>
                 <br><br>
             </select><br><br>
-
-            <label for="range"><i class="fas fa-dumbbell"></i> Nível do treino:</label><br><br>
-            <input type="range" id="range" min="1" max="10" value="5" step="1">
-
-            <p id="nivel"></p>
-
-            <script src="script.js"></script>
-
             <br><br>
 
 
-            <button type="submit" ><i class="fas fa-paper-plane"></i><a href="CJOWEB1-main/Concluiu.html">Enviar Matricula</a> </button>
+            <button type="submit" ><i class="fas fa-paper-plane"></i><a href="Concluiu.html">Enviar Matricula</a> </button>
         </fieldset>
     </form>
     <br><br><br><br>
