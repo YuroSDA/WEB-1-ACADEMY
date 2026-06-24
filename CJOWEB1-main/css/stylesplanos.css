@@ -1,5 +1,9 @@
 
 /* Tabela de Planos */
+caption {
+    padding: 35px;
+}
+
 #tabela-planos {
     width: 90%;
     max-width: 800px;
@@ -23,5 +27,15 @@
 }
 
 #tabela-planos tbody tr:hover {
-    background-color: #333;
+    background-color: #333;    
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+}
+
+ #his{
+    display: flex;
+    justify-content: center;
 }

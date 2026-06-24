@@ -1,6 +1,9 @@
 
 
 /* estilo para as listas da página "sobre" */
+section{
+    padding: 20px;
+}
 
 main ul, main ol {
     display: inline-block;
@@ -8,8 +11,22 @@ main ul, main ol {
     margin-top: 20px;
     line-height: 1.8;
 }
+h2{
+    display: flex;
+    justify-content: center;
+}
+
+ #his{
+    display: flex;
+    justify-content: center;
+}
 
 h3 {
     color: #ffcc00;
     margin: 30px;
+}
+li:hover {
+    background-color: #ffcc00;
+    color: #000;
+    height: 30px;
 }
