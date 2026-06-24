@@ -1,0 +1,86 @@
+/* Caixa principal */
+.bloco-treinos {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 18px;
+
+    padding: 35px;
+    max-width: 750px;
+    margin: 30px auto;
+
+    box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.35),
+        inset 0 1px 0 rgba(255, 255, 255, 0.15);
+
+    text-align: left;
+    transition: all 0.3s ease;
+}
+
+/* Efeito ao passar o mouse */
+.bloco-treinos:hover {
+    transform: translateY(-4px);
+    box-shadow:
+        0 12px 40px rgba(0, 0, 0, 0.45),
+        0 0 25px rgba(255, 204, 0, 0.15);
+}
+
+/* Título da caixa */
+.bloco-treinos h3 {
+    text-align: center;
+    color: #FFCC00;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+    text-shadow: 0 0 10px rgba(255, 204, 0, 0.5);
+}
+
+/* Dias da semana */
+.bloco-treinos ol > li {
+    margin-bottom: 25px;
+    padding: 15px;
+
+    background: rgba(255, 204, 0, 0.08);
+    border-left: 4px solid #FFCC00;
+    border-radius: 8px;
+
+    transition: all 0.3s ease;
+}
+
+/* Destaque ao passar o mouse */
+.bloco-treinos ol > li:hover {
+    background: rgba(255, 204, 0, 0.15);
+    transform: translateX(5px);
+}
+
+/* Título do treino */
+.bloco-treinos strong {
+    color: #FFCC00;
+    font-size: 1.1rem;
+}
+
+/* Lista de exercícios */
+.bloco-treinos ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+/* Exercícios */
+.bloco-treinos ul li {
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.8;
+    margin-bottom: 5px;
+}
+
+#h2titulo {
+    padding-top: 20px;
+    padding-left: 60px;
+}
+
+#psubtituilo {
+    padding-top: 10px;
+    padding-left: 80px;
+}
