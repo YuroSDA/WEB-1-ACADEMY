@@ -1,3 +1,5 @@
+/* Arquivo de estilização geral */
+
 header {
     background-color: #ffcc00; 
     color: #000;
@@ -31,6 +33,13 @@ body {
     margin: 0;
     padding: 0;
     z-index: -2;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
 }
 
 nav ul {
@@ -54,8 +63,6 @@ nav ul li a {
 }
 footer {
     position: relative;
-    bottom: 0;
-    left: 0;
     width: 100%;
     background-color: #ffcc00; 
     color: #000;
@@ -64,4 +71,5 @@ footer {
     background-size: 300% 300%;
     animation: moverCirculo 8s linear infinite;
     z-index: 2;
+    margin-top: auto;
 }

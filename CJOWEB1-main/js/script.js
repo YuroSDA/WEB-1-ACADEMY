@@ -3,7 +3,7 @@ function mostrarDica() {
     const dicas = [
         "Beba pelo menos 3 litros de água hoje!",
         "Mantenha a postura correta nos exercícios!",
-        "O descanso é tão importante quano o treino!",
+        "O descanso é tão importante quanto o treino!",
         "Consuma proteínas após o treino."
     ];
 
