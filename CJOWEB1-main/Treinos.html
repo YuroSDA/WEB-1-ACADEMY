@@ -66,9 +66,26 @@
                         </ul>
                     </li>
                 </ol>
+                <button onclick="atualizarNivel()" id="range">De 1 a 10 qual a intensidade que busca?</button>
+                <input type="number" id="nivel">
             </div>
+            <div class="imc">
+                
+    <h2>Calculadora de IMC</h2>
+
+    <label for="peso">Peso (kg):</label>
+    <input type="number" id="peso" placeholder="Ex.: 70">
+
+    <label for="altura">Altura (m):</label>
+    <input type="number" id="altura" step="0.01" placeholder="Ex.: 1.75">
+
+    <button onclick="calcularIMC()">Calcular IMC</button>
+
+    <p id="resultado"></p>
+</div
         </section>
     </main>
+    <script src="js/script.js"></script>
 
     <footer>
         <p>&copy; 2026 Academia Powerlifting - Todos os direitos reservados.</p>

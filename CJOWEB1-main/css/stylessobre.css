@@ -1,6 +1,10 @@
 /* Arquivo de estilização pagina "sobre" */
 
 /* estilo para as listas da página "sobre" */
+
+body{
+     background-image: url("https://raw.githubusercontent.com/YuroSDA/WEB-1-ACADEMY/main/CJOWEB1-main/Imagens%20Site/pexels-ivan-s-4162451.jpg");
+}
 section{
     padding: 20px;
 }
