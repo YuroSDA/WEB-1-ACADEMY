@@ -1,0 +1,128 @@
+<!-- Botão do WhatsApp -->
+<a href="https://wa.me/5511999999999" target="_blank" class="whatsapp-btn">
+    💬 Fale pelo WhatsApp
+</a>
+
+<!-- Botão do Chat -->
+<button id="abrirChat" class="chat-btn">🤖 Chat</button>
+
+<!-- Janela do Chat -->
+<div id="chatbox" class="chatbox">
+    <div class="chat-header">
+        Assistente Virtual
+    </div>
+
+    <div id="mensagens" class="mensagens">
+        <p><strong>Bot:</strong> Olá! Como posso ajudar?</p>
+    </div>
+
+    <input type="text" id="entrada" placeholder="Digite sua pergunta...">
+    <button onclick="enviar()">Enviar</button>
+</div> 
+
+<!-- HTML -->
+
+const abrirChat = document.getElementById("abrirChat");
+const chatbox = document.getElementById("chatbox");
+
+abrirChat.addEventListener("click", () => {
+    chatbox.style.display =
+        chatbox.style.display === "block" ? "none" : "block";
+});
+
+function enviar() {
+    const entrada = document.getElementById("entrada");
+    const mensagens = document.getElementById("mensagens");
+
+    const texto = entrada.value.trim();
+
+    if (texto === "") return;
+
+    mensagens.innerHTML += `<p><strong>Você:</strong> ${texto}</p>`;
+
+    let resposta = "Desculpe, não entendi sua pergunta.";
+
+    if (texto.toLowerCase().includes("plano")) {
+        resposta = "Temos planos Mensal, Trimestral e Anual.";
+    } else if (texto.toLowerCase().includes("horário")) {
+        resposta = "Funcionamos das 6h às 22h, de segunda a sábado.";
+    } else if (texto.toLowerCase().includes("preço")) {
+        resposta = "Entre em contato pelo WhatsApp para conhecer os valores.";
+    } else if (texto.toLowerCase().includes("matrícula")) {
+        resposta = "A matrícula pode ser feita diretamente em nosso site.";
+    }
+
+    mensagens.innerHTML += `<p><strong>Bot:</strong> ${resposta}</p>`;
+
+    entrada.value = "";
+    mensagens.scrollTop = mensagens.scrollHeight;
+}
+
+<!-- JAVASCRIPT -->
+
+
+.whatsapp-btn,
+.chat-btn {
+    position: fixed;
+    right: 20px;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.whatsapp-btn {
+    bottom: 80px;
+    background: #25D366;
+}
+
+.chat-btn {
+    bottom: 20px;
+    background: #f4b400;
+    color: black;
+}
+
+.chatbox {
+    display: none;
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 300px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.chat-header {
+    background: #f4b400;
+    color: black;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.mensagens {
+    height: 200px;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+.chatbox input {
+    width: 95%;
+    padding: 8px;
+    margin: 5px;
+}
+
+.chatbox button {
+    width: 100%;
+    padding: 10px;
+    background: #f4b400;
+    border: none;
+    cursor: pointer;
+}
+
+
+<!-- CSS -->
