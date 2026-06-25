@@ -10,6 +10,7 @@ header {
     animation: moverCirculo 8s linear infinite;
     position: sticky;
     top: 0;
+    z-index: 3;
 }
 
 @keyframes moverCirculo {
