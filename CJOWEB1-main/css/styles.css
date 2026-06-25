@@ -63,4 +63,5 @@ footer {
     text-align: center;
     background-size: 300% 300%;
     animation: moverCirculo 8s linear infinite;
+    z-index: 2;
 }
